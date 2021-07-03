@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.InsertActivity">
+    <TextView
+        android:id="@+id/tv_date_insert"
+        android:hint="0000년 00월 00일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        /> // 날짜 tv_date_insert
+    <ImageView
+        android:id="@+id/iv_insert"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:hint="식단이미지"
+        android:gravity="center"
+        android:layout_weight="2.5"
+        />  // 이미지 창  ID:iv_insert
+
+    <TextView
+        android:text="식단점수"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+     /> // 식단점수
+
+    <RadioGroup
+        android:id="@+id/radio_num"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:id="@+id/rdo_num0"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_num1"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_num2"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_num3"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_num4"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20dp"
+            />
+
+    </RadioGroup>  // 식단 점수 입력 버튼들 rdo_num1,2,3,4,5"
+    <TextView
+        android:text="식사량"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        /> // 식사량
+    <RadioGroup
+        android:id="@+id/radio_level"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        >
+
+        <RadioButton
+            android:id="@+id/rdo_level0"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="가볍게"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_level1"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="적당량"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_level2"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="배불리"
+            />
+
+        <RadioButton
+            android:id="@+id/rdo_level3"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="과하게"
+            android:textSize="20dp"
+            />
+
+
+    </RadioGroup>  // 식사량 입력 버튼들 rdo_level1,2,3,4
+    <TextView
+        android:text="식사시간"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        /> // 식사시간
+    <TextView
+        android:id="@+id/tv_result_time_insert"
+        android:onClick="popTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="시간입력"
+        android:drawableTop="@drawable/ic_time"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        /> // 시간 선택 후 나타나게 하기 tv_result_time_insert
+    <TextView
+        android:text="메모"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        /> // 메모
+    <EditText
+        android:id="@+id/et_memo"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:hint="간단하게 입력하세요"
+        /> // 메모입력창 et_memo
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:text="입력"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>

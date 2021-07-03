@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shadow Text"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:shadowColor="#0000FF"
+        android:shadowDx="3.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="3.0"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wide Text"
+        android:textSize="30dp"
+        android:textScaleX="4"
+        />
+<!--        글자 몇배 더크게 textScaleX="x"-->
+
+    <TextView
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동해물과 ㅐㄱ두산이 마르고 닳도록 ㅏ느님이 보우하사 우리나라 만세. 대한 사람 대한으로 우리 나라만세"
+        />
+    <TextView
+        android:background="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동해물과 ㅐㄱ두산이 마르고 닳도록 ㅏ느님이 보우하사 우리나라 만세. 대한 사람 대한으로 우리 나라만세"
+        android:lineSpacingMultiplier="1.5"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Characters"
+        android:inputType="textCapCharacters"
+        />
+<!--        //대문자만 나오게 하는 tetCapCharacters-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Characters"
+        android:inputType="textCapWords"
+        />
+<!--            단어별로 앞글자 대문자로 나오게 하기 textCapWords-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Characters"
+        android:textColorHint="#ff0000"
+        android:inputType="textCapSentences"
+        />
+<!--        문장별로 앞글자 대문자로 나오게 하기 textCapSentences-->
+<!--    hint는 쓰면 없어짐-->
+<!--    textColorHint로 힌트 색도 조절 가능-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동해물과 ㅐㄱ두산이 마르고 닳도록 ㅏ느님이 보우하사 우리나라 만세. 대한 사람 대한으로 우리 나라만세"
+        android:singleLine="true"
+        android:ellipsize="none"
+        />
+<!--   singleLine 이 트루면 한줄로 출력후 뒤에 ....-->
+<!--    ellipsize는 뒤에 ...을 어떻게 나타낼지 생략법-->
+</LinearLayout>
